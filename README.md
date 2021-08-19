@@ -21,3 +21,9 @@ I choose this because I needed my items to be ordered, changeable and the possib
 to allow duplicates. Also, it comes with very useful methods like length, pop and append. 
 I needed to data structure to loop through sequentially, and since I did not have to perform a 
 loopup, list was a good option.
+
+#### output - dictionary
+- I wanted to avoid duplicates
+- A good way to keep track to my timestamp using keys
+- Values of keys can be a list or any other data type
+- Constant look up time using the keys (timestamp)
