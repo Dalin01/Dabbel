@@ -36,12 +36,6 @@ class TestWrongEncodingMethods(unittest.TestCase):
     def test_list_case(self):
         arr = ["\"Hello\"", 5]
         self.assertEqual(list_case(arr), ["Hello", 5])
-    
-    def test_output(self):
-        input_file = read_json('2000.json')
-        obj=dict_case(input_file['objects'])
-        self.assertDictEqual(input_file['objects'], obj)
-        self.assertDic
 
 if __name__ == '__main__':
     unittest.main()
