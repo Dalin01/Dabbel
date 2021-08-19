@@ -18,11 +18,11 @@ def read_files(file_path):
             data.append(row)
     return data
 
-# reading = read_files('reading.csv')
-# prediction = read_files('prediction.csv')
+reading = read_files('./files/reading.csv')
+prediction = read_files('./files/prediction.csv')
 
-reading = get_reading()
-prediction = get_prediction()
+# reading = get_reading()
+# prediction = get_prediction()
 
 def get_sec(value):
     dt_obj = dt.datetime.strptime(value, '%Y-%m-%d %H:%M:%S')

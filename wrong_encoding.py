@@ -66,14 +66,14 @@ def list_case(arr):
 
 
 def save_data(data):
-    with open('2000_cleaned.json', 'w') as file:
+    with open('./files/2000_cleaned.json', 'w') as file:
         try:
             json.dump(data, file, indent=4)
         except (IOError, OSError) as e:
             print(e)
 
 
-data=read_json('2000.json') # read
+data=read_json('./files/2000.json') # read
 obj=dict_case(data['objects'])
 data['objects']=obj
 save_data(data) # save
