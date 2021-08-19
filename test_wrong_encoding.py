@@ -41,6 +41,7 @@ class TestWrongEncodingMethods(unittest.TestCase):
         input_file = read_json('2000.json')
         obj=dict_case(input_file['objects'])
         self.assertDictEqual(input_file['objects'], obj)
-    
+        self.assertDic
+
 if __name__ == '__main__':
     unittest.main()
